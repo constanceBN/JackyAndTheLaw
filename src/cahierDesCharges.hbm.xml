@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="com.Jacky.model.CahierDesCharges" table="cahierDesCharges">
+		<id name="idCahierDesCharges" type="int" column="IdCahierDesCharges">
+			<generator class="increment" />
+		</id>
+		<property name="typeDeLicences">
+			<column name="TypeDeLicences" />
+		</property>
+		<property name="domaineProfessionnel">
+			<column name="DomaineProfessionnel" />
+		</property>
+		<property name="honorairesJuriste">
+			<column name="HonorairesJuriste" />
+		</property>
+		<property name="idJuriste">
+			<column name="IdJuriste" />
+		</property>
+		<property name="exempleCasConcrets">
+			<column name="ExempleCasConcrets" />
+		</property>
+	</class>
+</hibernate-mapping>    
